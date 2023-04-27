@@ -1,0 +1,41 @@
+01)
+SELECT *
+FROM `students`
+WHERE YEAR(`date_of_birth`) = 1990;
+
+02)
+SELECT *
+FROM `courses`
+WHERE `cfu` > 10;
+
+03)
+SELECT *
+FROM students
+WHERE date_of_birth <= DATE_SUB(CURDATE(), INTERVAL 30 YEAR);
+
+
+04)
+SELECT *
+FROM `courses`
+WHERE `period` = "I semestre"
+AND `year` = "1";
+
+05)
+SELECT *
+FROM `exams`
+WHERE `date` = "2020/06/20"
+AND `hour` >= "14:00:00";
+
+06)
+SELECT *
+FROM `degrees`
+WHERE `name` LIKE "%magistrale%";
+
+07)
+SELECT COUNT(`name`)
+FROM `departments`;
+
+08)
+SELECT COUNT(`name`)
+FROM `teachers`
+WHERE `phone` IS NULL;
