@@ -3,6 +3,21 @@ SELECT *
 FROM `students`
 WHERE YEAR(`date_of_birth`) = 1990;
 
+SELECT `surname`, `name`, `date_of_birth`
+FROM `students`
+WHERE YEAR(`date_of_birth`) = 1990
+ORDER BY `surname` ASC;
+
+SELECT `surname`, `name`, `date_of_birth`
+FROM `students`
+WHERE YEAR(`date_of_birth`) BETWEEN 1990 AND 2000
+ORDER BY `surname` ASC;
+
+SELECT `surname`, `name`, `date_of_birth`
+FROM `students`
+WHERE `date_of_birth` BETWEEN '1990-01-01' AND '1990-08-31'
+ORDER BY `surname` ASC;
+
 02)
 SELECT *
 FROM `courses`
@@ -10,7 +25,7 @@ WHERE `cfu` > 10;
 
 03)
 SELECT *
-FROM students
+FROM `students`
 WHERE date_of_birth <= DATE_SUB(CURDATE(), INTERVAL 30 YEAR);
 
 
