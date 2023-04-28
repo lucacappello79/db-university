@@ -50,7 +50,14 @@ WHERE `name` LIKE "%magistrale%";
 SELECT COUNT(`name`)
 FROM `departments`;
 
+SELECT COUNT(`id`) AS `numero_di_dipartimenti`
+FROM `departments`;
+
 08)
 SELECT COUNT(`name`)
+FROM `teachers`
+WHERE `phone` IS NULL;
+
+SELECT COUNT(`id`) AS ``
 FROM `teachers`
 WHERE `phone` IS NULL;
