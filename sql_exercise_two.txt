@@ -82,7 +82,7 @@ ON `courses`.`degree_id`= `degrees`.`id`
 INNER JOIN `departments`
 ON `degrees`.`department_id` = `departments`.`id`
 
-WHERE `department_id` = 5
+WHERE `departments`.`id` = 5
 ;
 
 7. BONUS: Selezionare per ogni studente quanti tentativi d’esame ha sostenuto per
